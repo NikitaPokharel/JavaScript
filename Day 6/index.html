@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Fullname: <input type="text"  id="name" minlength="5" maxlength="20" pattern="[a-zA-Z]{6,15}" required> --><!--form validation using html-->
+
+    Fullname: <input type="text"  id="name" >
+    <br> <br>
+    Address:   <input type="text" id="address">
+    <br> <br>
+    Password: <input type="password" name="" id="password">
+    <br><br>
+    Confirm Password: <input type="password" name="" id="confirmPassword">
+    <br><br>
+    <button id="button" onclick="validate()"> Validate</button>
+
+    <script>
+        function validate() {
+            // const Fullname = document.getElementById("name");
+            // const Address = document.getElementById("address");
+            // console.log(Fullname, Address);
+            // console.log("Hello");
+            // console.log("Fullname :" + Fullname.value);
+            // console.log(Fullname.value.length);
+            // console.log("Address :" + Address.value);
+            // console.log(Address.value.length);
+            // if(Fullname.value.length <=3){
+            //     alert("Fullname cannot be less than 3 letters.");
+            // }
+
+            // if(Address.value.length <=7){
+            //     alert("Address cannot be less than 7 letters.");
+            // }
+
+            const passwordField = document.getElementById("password").value;
+            const confirmPasswordField = document.getElementById("confirmPassword").value;
+            if (passwordField ===confirmPasswordField) {
+
+                console.log("Passwords are correct");
+            
+            } 
+            else {
+                console.log("Passwords are incorrect");
+                
+            }
+
+        }
+    </script>
+</body>
+</html>
